@@ -11,19 +11,18 @@
 int main(void)
 {
 	char out = 97;
+
 	while (out != 97 + 26)
 	{
 		putchar(out);
 		out++;
 	}
-
 	out = 65;
-
 	while (out != 65 + 26)
-        {
-                putchar(out);
+	{
+		putchar(out);
 		out++;
-        }
+	}
 	putchar('\n');
 	return (0);
 }
