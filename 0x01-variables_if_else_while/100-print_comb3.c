@@ -20,7 +20,11 @@ int main(void)
 		{
 			putchar(out1);
 			putchar(out2++);
-			putchar(' ');
+			if (!(out1 == 56 && out2 == 58))
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 		out1++;
 	}
