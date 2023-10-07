@@ -13,12 +13,11 @@ int main(void)
 	char out = 97;
 
 	while (out != 97 + 26)
-	{	if (out != 112 && out != 113)
+	{
+		if (out != 101 && out != 113)
 			putchar(out);
 		out++;
 	}
-
 	putchar('\n');
-
 	return (0);
 }
