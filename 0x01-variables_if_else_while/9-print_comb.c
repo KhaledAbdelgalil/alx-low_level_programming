@@ -12,13 +12,14 @@ int main(void)
 {
 	unsigned short int out = 49;
 
-	putchar('0');
-
 	while (out != 58)
 	{
-		putchar(',');
-		putchar(' ');
 		putchar(out);
+		if (out != 57)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 		out++;
 	}
 	putchar('\n');
