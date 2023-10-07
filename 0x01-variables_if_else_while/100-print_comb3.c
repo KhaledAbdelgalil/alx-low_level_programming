@@ -13,7 +13,7 @@ int main(void)
 	unsigned short int out1 = 48;
 	unsigned short int out2;
 
-	while (out1 != 58)
+	while (out1 != 57)
 	{
 		out2 = out1 + 1;
 		while (out2 != 58)
