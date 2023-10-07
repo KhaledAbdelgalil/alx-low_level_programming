@@ -10,7 +10,7 @@
  */
 int main(void)
 {
-	unsigned short int out = 49;
+	unsigned short int out = 48;
 
 	while (out != 58)
 	{
