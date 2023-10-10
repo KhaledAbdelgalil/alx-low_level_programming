@@ -6,8 +6,8 @@
  */
 void print_times_table(int n)
 {
-	char i, j;
-	char ans = 0;
+	unsigned char i, j;
+	unsigned char ans = 0;
 	
 	if (n > 15 || n < 0)
 		return;
