@@ -6,3 +6,4 @@ int _islower(char);
 int _isalpha(char y);
 int print_sign(int);
 int _abs(int);
+int print_last_digit(int);
