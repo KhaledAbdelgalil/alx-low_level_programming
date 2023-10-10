@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	unsigned short int n = 1023, sum = 0;
+	unsigned int n = 1023, sum = 0;
 
 	while (n >= 3)
 	{
@@ -16,5 +16,5 @@ int main(void)
 	}
 
 	printf("%u\n", sum);
-    return (0);
+	return (0);
 }
