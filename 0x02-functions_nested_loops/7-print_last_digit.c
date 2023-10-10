@@ -5,7 +5,7 @@
  *  Return: last_digit of the number
  *  @input: the number
  */
-int print_last_digit(int input)
+int print_last_digit(long int input)
 {
 	if (input < 0)
 		input = -1 * input;
