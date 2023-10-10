@@ -8,8 +8,8 @@
 int main(void)
 {
 	unsigned char n = 1;
-       	unsigned long int first = 1, second = 1, temp = 0;
-	
+	unsigned long int first = 1, second = 1, temp = 0;
+
 	printf("%u", 1u);
 	while (n < 50)
 	{
