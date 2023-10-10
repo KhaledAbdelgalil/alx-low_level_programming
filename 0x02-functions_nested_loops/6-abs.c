@@ -13,7 +13,6 @@ int _abs(int input)
 	}
 	else
 	{
-		_putchar('-');
 		return (-1 * input);
 	}
 }
