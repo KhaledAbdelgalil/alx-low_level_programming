@@ -21,18 +21,18 @@ int main(void)
 		n++;
 	}
 	/*the idea is splitting on 2 parts*/
-	first2 = first % 100000000;
-	first = first / 100000000;
-	second2 = second % 100000000;
-	second = second / 100000000;
+	first2 = first % 100000000000;
+	first = first / 100000000000;
+	second2 = second % 100000000000;
+	second = second / 100000000000;
 	while (n < 98)
 	{
 		temp = first + second;
 		temp2 = first2 + second2;
 		first2 = second2, second2 = temp2;
 		first = second, second = temp;
-		printf(", %lu", temp + temp2 / 100000000);
-		printf("%lu", temp2 % 100000000);
+		printf(", %lu", temp + temp2 / 100000000000);
+		printf("%lu", temp2 % 100000000000);
 		n++;
 	}
 
