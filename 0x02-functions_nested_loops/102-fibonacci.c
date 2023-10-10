@@ -7,7 +7,8 @@
  */
 int main(void)
 {
-	unsigned int n = 1, first = 1, second = 1, temp = 0;
+	unsigned char n = 1;
+       	unsigned long int first = 1, second = 1, temp = 0;
 	
 	printf("%u", 1u);
 	while (n < 50)
@@ -15,7 +16,7 @@ int main(void)
 		temp = first + second;
 		first = second;
 		second = temp;
-		printf(", %u", temp);
+		printf(", %lu", temp);
 		n++;
 	}
 
