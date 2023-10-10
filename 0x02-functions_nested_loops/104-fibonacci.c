@@ -8,7 +8,7 @@
 int main(void)
 {
 	unsigned char n = 1;
-	unsigned long int first = 1, second = 1
+	unsigned long int first = 1, second = 1;
 	unsigned long int temp = 0, first2 = 0, second2 = 0, temp2 = 0;
 
 	printf("%u", 1u);
