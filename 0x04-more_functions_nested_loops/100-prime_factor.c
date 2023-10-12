@@ -7,11 +7,9 @@
  */
 int main(void)
 {
-	unsigned long n = 612852475143;
-	unsigned long max = 3, i = 3, root = sqrt(n);
+	long n = 612852475143;
+	long max, i = 2, root = sqrt(n);
 
-	while (n % 3 == 0)
-		n = n / 3;
 	while (i <= root)
 	{
 		while (n % i == 0)
@@ -21,7 +19,6 @@ int main(void)
 		}
 		i++;
 	}
-	
 	if (n > max)
 		max = n;
 	printf("%lu", max);
