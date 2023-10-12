@@ -1,9 +1,9 @@
 #include "main.h"
 /**
  *  print_diagonal - prints diagonal of length n, followed by new line.
- *  @n: lengthe of diagonal
+ *  @n: length of diagonal
  */
-void  print_diagnal(int n)
+void print_diagonal(int n)
 {
 	int spaces = 0, i = 0;
 
