@@ -18,7 +18,8 @@ int main(void)
 			printf("Fizz");
 		else
 			printf("%d", out);
-		printf(" ");
+		if (out != 100)
+			printf(" ");
 		out++;
 	}
 	printf("\n");
