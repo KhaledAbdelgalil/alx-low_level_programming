@@ -12,7 +12,8 @@ void  print_diagnal(int n)
 		for (i = 0; i < spaces; i++)
 			_putchar(' ');
 		spaces++;
-		_putchar('\');
+		_putchar('\\');
+		_putchar('\n');
 		n--;
 	}
 
