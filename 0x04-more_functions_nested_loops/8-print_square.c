@@ -6,6 +6,7 @@
 void print_square(int n)
 {
 	int i = 0;
+	int side = n;
 
 	if (n <= 0)
 	{
@@ -14,7 +15,7 @@ void print_square(int n)
 	}
 	while (n > 0)
 	{
-		for (i = 0; i < spaces; i++)
+		for (i = 0; i < side; i++)
 			_putchar('#');
 		_putchar('\n');
 		n--;
