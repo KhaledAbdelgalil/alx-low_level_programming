@@ -7,4 +7,5 @@ int _isupper(char);
 int _isdigit(char input);
 int mul(int in1, int in2);
 void print_numbers(void);
+void print_most_numbers(void);
 #endif /* MAIN_H */
