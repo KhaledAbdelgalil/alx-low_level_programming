@@ -8,7 +8,7 @@ void  print_most_numbers(void)
 
 	while (out != 58)
 	{
-		if (out !=50 && out != 52)
+		if (out != 50 && out != 52)
 			_putchar(out);
 		out++;
 	}
