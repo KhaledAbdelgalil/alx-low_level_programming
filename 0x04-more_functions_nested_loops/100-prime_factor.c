@@ -21,6 +21,6 @@ int main(void)
 	}
 	if (n > max)
 		max = n;
-	printf("%lu", max);
+	printf("%ld", max);
 	return (0);
 }
