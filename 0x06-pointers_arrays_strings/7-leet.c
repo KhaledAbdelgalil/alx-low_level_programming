@@ -8,16 +8,16 @@
  */
 char *leet(char *in)
 {
-	char shouldtransformation[] = "aeotlAEOTL";
+	char letters[] = "aeotlAEOTL";
 	char to[] = "43071";
 	int cnt = 0;
 	int i = 0;
-	
+
 	while (in[cnt] != '\0')
 	{
 		for (i = 0; i < 5; i++)
 		{
-			if (in[cnt] == shouldtransformation[i] || in[cnt] == shouldtransformation[i + 5])
+			if (in[cnt] == letters[i] || in[cnt] == letters[i + 5])
 			{
 				in[cnt] = to[i];
 				break;
