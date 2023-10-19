@@ -17,7 +17,7 @@ char *leet(char *in)
 		if (isalpha(in[cnt]))
 		{
 			tmp = tolower(in[cnt]);
-			if (isdigit(transformation[tmp - 'a']))
+			if (transformation[tmp - 'a'] >= '0' && transformation[tmp - 'a'] <= '9')
 				in[cnt] = transformation[tmp - 'a'];
 		}
 		cnt++;
