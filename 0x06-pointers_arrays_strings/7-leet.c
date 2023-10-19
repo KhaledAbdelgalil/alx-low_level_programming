@@ -9,7 +9,7 @@
 char *leet(char *in)
 {
 	char shouldtransformation[] = "aeotlAEOTL";
-	char to[] = "43071"
+	char to[] = "43071";
 	int cnt = 0;
 	int i = 0;
 	
