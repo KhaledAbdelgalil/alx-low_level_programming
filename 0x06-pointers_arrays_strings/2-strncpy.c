@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *   _strncpy - function that copy string into another 
+ *   _strncpy - function that copy string into another
  *
  *  @dest: pointer to first char in destination string
  *  @src: pointer to first char in src string
@@ -11,7 +11,7 @@ char *_strncpy(char *dest, char *src, int n)
 {
 	int i = 0;
 
-	while (i != n && src[i] != '\0') 
+	while (i != n && src[i] != '\0')
 	{
 		dest[i] = src[i];
 		i++;
