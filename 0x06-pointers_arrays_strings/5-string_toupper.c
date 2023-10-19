@@ -12,7 +12,7 @@ char* string_toupper(char *in)
 	while (in[cnt] != '\0')
 	{
 		if (in[cnt] >= 'a' && in[cnt] <= 'z')
-			in[cnt] = in[cnt] - 'a' + 'A'
+			in[cnt] = in[cnt] - 'a' + 'A';
 		cnt++;
 	}
 	return (in);
