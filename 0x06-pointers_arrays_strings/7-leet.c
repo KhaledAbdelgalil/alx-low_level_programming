@@ -8,17 +8,22 @@
  */
 char *leet(char *in)
 {
-	char transformation[] = "4bcd3fghijk1mn0pqrs7uvwxyz";
+	char shouldtransformation[] = "aeotlAEOTL";
+	char to[] = "43071"
 	int cnt = 0;
-	char tmp;
-
+	int i = 0;
+	
 	while (in[cnt] != '\0')
 	{
-		if (isalpha(in[cnt]))
+		for (i = 0; i < 5; i++)
 		{
-			tmp = tolower(in[cnt]);
-			in[cnt] = isdigit(transformation[tmp - 'a']) ? transformation[tmp - 'a'] : in[cnt];
+			if (in[cnt] == shouldtransformation[i] || in[cnt] == shouldtransformation[i + 5])
+			{
+				in[cnt] = to[i];
+				break;
+			}
 		}
+
 		cnt++;
 	}
 	return (in);
