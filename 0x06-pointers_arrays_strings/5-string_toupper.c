@@ -5,7 +5,7 @@
  *  @in: pointer to first char in string
  *  Return: pointer to new string
  */
-char* string_toupper(char *in)
+char *string_toupper(char *in)
 {
 	int cnt = 0;
 
