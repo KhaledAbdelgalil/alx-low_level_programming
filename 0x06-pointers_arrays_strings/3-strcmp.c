@@ -6,7 +6,7 @@
  *  @s2: pointer to first char in 2nd string
  *  Return: pointer to destination
  */
-char *_strcmp(char *s1, char *s2)
+int _strcmp(char *s1, char *s2)
 {
 	int i = 0;
 	
