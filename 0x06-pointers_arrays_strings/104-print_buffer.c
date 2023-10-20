@@ -26,6 +26,7 @@ void print_buffer(char *b, int size)
 					printf("%.2x", *(b + k));
 				else
 					printf("  ");
+				k++;
 			}
 			printf(" ");
 			j = i;
@@ -40,6 +41,7 @@ void print_buffer(char *b, int size)
 				}
 				else
 					printf("%c", *(b + j));
+				j++;
 			}
 			printf("\n");
 		}
