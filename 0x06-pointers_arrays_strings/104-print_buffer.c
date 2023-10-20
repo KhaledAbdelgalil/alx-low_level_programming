@@ -31,7 +31,7 @@ void print_buffer(char *b, int size)
 			j = i;
 			while (j < i + 10)
 			{
-				if (l >= size)
+				if (j >= size)
 					break;
 				if (*(b + j) < 32 || *(b + j) > 126)
 				{
