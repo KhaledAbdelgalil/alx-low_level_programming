@@ -22,6 +22,7 @@ char *_strstr(char *s, char *accept)
 		else
 		{
 			j = 0;
+			i = startofWindow + 1;
 			startofWindow = i;
 			while (s[i] != accept[j] && s[i] != '\0')
 			{
