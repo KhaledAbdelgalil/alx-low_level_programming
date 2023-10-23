@@ -12,12 +12,6 @@ char *_strstr(char *s, char *accept)
 {
 	unsigned int i = 0, j = 0, startofWindow = 0;
 
-	while (s[i] != accept[j] && s[i] != '\0')
-	{
-		i++;
-		startofWindow++;
-	}
-
 	while (s[i] != '\0' && accept[j] != '\0')
 	{
 		if (s[i] == accept[j])
