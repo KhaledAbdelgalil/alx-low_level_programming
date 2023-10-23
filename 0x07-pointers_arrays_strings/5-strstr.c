@@ -37,7 +37,7 @@ char *_strstr(char *s, char *accept)
 		}
 	}
 	if (accept[j] == '\0')
-		return (&s[startofWindow])
+		return (&s[startofWindow]);
 	return (NULL);
 
 }
