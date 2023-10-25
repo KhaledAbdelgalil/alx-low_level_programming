@@ -9,7 +9,7 @@ int wildcmp(char *s1, char *s2)
 {
 
 /*first case: we reached end of both strings ==> 1*/
-	if (*s1 == '\0' &&s2 == '\0')
+	if (*s1 == '\0' && *s2 == '\0')
 		return (1);
 
 /*second case: we reached end of s1, and s2 has char at end not * ==> 0*/
