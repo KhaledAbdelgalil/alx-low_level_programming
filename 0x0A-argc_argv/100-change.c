@@ -19,6 +19,11 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	coins = atoi(argv[1]);
+	if (coins < 0)
+	{
+		printf("0\n");
+		return (1);
+	}
 	if (coins >= 25)
 	{
 		changes = coins / 25;
