@@ -19,22 +19,22 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	coins = atoi(argv[1]);
-	if (coins > 25)
+	if (coins >= 25)
 	{
 		changes = coins / 25;
 		coins = coins % 25;
 	}
-	if (coins > 10)
+	if (coins >= 10)
 	{
 		changes += coins / 10;
 		coins = coins % 10;
 	}
-	if (coins > 5)
+	if (coins >= 5)
 	{
 		changes += coins / 5;
 		coins = coins % 5;
 	}
-	if (coins > 2)
+	if (coins >= 2)
 	{
 		changes += coins / 2;
 		coins = coins % 2;
