@@ -16,8 +16,8 @@ char *str_concat(char *str1, char *str2)
 
 	if (str1 == NULL && str2 == NULL)
 		return (NULL);
-	size1 = strlen(str1);
-	size2 = strlen(str2);
+	size1 = str1 != NULL ? strlen(str1) : 0;
+	size2 = str2 != NULL ? strlen(str2) : 0;
 	array = (char *) malloc(sizeof(char) * (size1 + size2 + 1));
 
 	if (array == NULL)
