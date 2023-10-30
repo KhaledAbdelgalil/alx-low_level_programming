@@ -12,11 +12,11 @@ char *_strdup(char *str)
 {
 	char *array;
 	unsigned int i = 0;
-	unsigned int size = strlen(str);
+	unsigned int size;
 
 	if (str == NULL)
 		return (NULL);
-
+	size = strlen(str);
 	array = (char *) malloc(sizeof(char) * (size + 1));
 
 	if (array == NULL)
