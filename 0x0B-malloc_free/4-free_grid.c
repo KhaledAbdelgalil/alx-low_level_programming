@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * alloc_grid -  frees a 2 dimensional grid previously created.
+ * free_grid -  frees a 2 dimensional grid previously created.
  *
  * @height: input height of grid
  * @grid:   grid itself
@@ -16,7 +16,7 @@ void free_grid(int **grid, int height)
 
 	for (i = 0; i < height; i++)
 	{
-		free(grid[i]);	
+		free(grid[i]);
 	}
 
 	free(grid);
