@@ -33,6 +33,7 @@ int main(int argc, char *argv[])
 	{
 		digit1 = str1[i] - '0';
 		j = len2 - 1;
+		carry = 0;
 		while (j >= 0)
 		{
 			digit2 = str2[j] - '0';
@@ -51,7 +52,7 @@ int main(int argc, char *argv[])
 			firstNonZeroComes = 1;
 		if (firstNonZeroComes)
 			putchar(result[i] + '0');
-		i--;
+		i++;
 	}
 	if (firstNonZeroComes == 0)
 		putchar('0');
