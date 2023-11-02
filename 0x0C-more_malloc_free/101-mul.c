@@ -10,28 +10,21 @@
  */
 int main(int argc, char *argv[])
 {
-	char *str1, *str2;
+	char *str1, *str2, firstNonZeroComes = 0;
 	int len1, len2, len, i, j;
-	int *result;
-	int carry;
-	int digit1, digit2;
-	unsigned char firstNonZeroComes = 0;
+	int *result, carry, digit1, digit2;
 
 	if (argc != 3)
-	{
-		printf("Error\n");
-		exit(98);
-	}
+		printf("Error\n"), exit(98);
 	str1 = argv[1], str2 = argv[2];
 	len1 = strlen(str1);
 	len2 = strlen(str2);
 	len = len1 + len2 + 1;
-	result = malloc(sizeof(int) * len);
+	result = (int *) malloc(sizeof(int) * len);
 	if (!result)
 		return (1);
-	for (i = 0; i <= len3 - 1; i++)
+	for (i = 0; i <= len - 1; i++)
 		result[i] = 0;
-
 	i = len1 - 1;
 	while (i >= 0)
 	{
@@ -42,8 +35,7 @@ int main(int argc, char *argv[])
 			digit2 = str2[j] - '0';
 			carry += result[i + j + 1] + (digit1 * digit2);
 			result[i + j + 1] = carry % 10;
-			carry /= 10;
-			j--;
+			carry /= 10, j--;
 		}
 	}
 	i = 0;
@@ -56,7 +48,6 @@ int main(int argc, char *argv[])
 	}
 	if (firstNonZeroComes == 0)
 		putchar('0');
-	putchar('\n');
-	free(result);
+	putchar('\n'), free(result);
 	return (0);
 }
