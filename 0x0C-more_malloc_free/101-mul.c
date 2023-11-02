@@ -34,9 +34,10 @@ int main(int argc, char *argv[])
 		{
 			digit2 = str2[j] - '0';
 			carry += result[i + j + 1] + (digit1 * digit2);
-			result[i + j + 1] = carry % 10;
-			carry /= 10, j--;
+			result[i + j-- + 1] = carry % 10;
+			carry /= 10;
 		}
+		i--;
 	}
 	i = 0;
 	while (i < len - 1)
