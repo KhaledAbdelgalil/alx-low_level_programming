@@ -28,12 +28,12 @@ int is_digit(char *s)
  */
 int main(int argc, char *argv[])
 {
-	char *str1, *str2, firstNonZeroComes = 0;
+	char *str1 = argv[1], *str2 = argv[2], firstNonZeroComes = 0;
 	int len1, len2, len, i, j, *result, carry, digit1, digit2;
 
 	if (argc != 3 || !is_digit(str1) || !is_digit(str2))
 		printf("Error\n"), exit(98);
-	str1 = argv[1], str2 = argv[2], len1 = strlen(str1), len2 = strlen(str2);
+	len1 = strlen(str1), len2 = strlen(str2);
 	len = len1 + len2 + 1;
 	result = (int *) malloc(sizeof(int) * len);
 	if (!result)
