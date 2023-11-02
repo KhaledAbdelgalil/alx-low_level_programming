@@ -10,7 +10,7 @@
 int main(int argc, char *argv[])
 {
 	char *str1, *str2;
-	int len1, len2, len3, i, j;
+	int len1, len2, len, i, j;
 	int *result;
 	int carry;
 	int digit1, digit2;
