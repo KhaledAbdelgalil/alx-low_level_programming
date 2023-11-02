@@ -15,7 +15,10 @@ int main(int argc, char *argv[])
 	int *result, carry, digit1, digit2;
 
 	if (argc != 3)
-		printf("Error\n"), exit(98);
+	{
+		printf("Error\n");
+		exit(98);
+	}
 	str1 = argv[1], str2 = argv[2];
 	len1 = strlen(str1);
 	len2 = strlen(str2);
@@ -34,8 +37,9 @@ int main(int argc, char *argv[])
 		{
 			digit2 = str2[j] - '0';
 			carry += result[i + j + 1] + (digit1 * digit2);
-			result[i + j-- + 1] = carry % 10;
+			result[i + j + 1] = carry % 10;
 			carry /= 10;
+			j--;
 		}
 		i--;
 	}
@@ -46,9 +50,11 @@ int main(int argc, char *argv[])
 			firstNonZeroComes = 1;
 		if (firstNonZeroComes)
 			putchar(result[i] + '0');
+		i--;
 	}
 	if (firstNonZeroComes == 0)
 		putchar('0');
-	putchar('\n'), free(result);
+	putchar('\n');
+	free(result);
 	return (0);
 }
