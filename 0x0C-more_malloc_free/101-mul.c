@@ -41,6 +41,7 @@ int main(int argc, char *argv[])
 			carry /= 10;
 			j--;
 		}
+		result[i + j + 1] += carry;
 		i--;
 	}
 	i = 0;
