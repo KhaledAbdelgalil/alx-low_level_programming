@@ -19,7 +19,7 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i = 0;
 
-	while (i < 4 && ops[i].op != NULL)
+	while (i < 5 && ops[i].op != NULL)
 	{
 		if (s[0] == ops[i].op[0])
 			break;
