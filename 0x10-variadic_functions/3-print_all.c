@@ -46,9 +46,11 @@ void print_all(const char * const format, ...)
 			tempStr = va_arg(valist, char *);
 			notFirstTime = 1;
 			if (tempStr == NULL)
+			{
 				printf("(nil)");
-			else
-				printf("%s", tempStr);
+				break;
+			}
+			printf("%s", tempStr);
 			break;
 		}
 		i++;
