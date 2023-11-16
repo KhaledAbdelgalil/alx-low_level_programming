@@ -1,13 +1,6 @@
 #include <stdio.h>
-
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
 int main(void)
 {
-    printf("Hello, ");
-    printf("Holberton\n");
+    printf("Hello, Holberton\n");
     return (0);
 }
