@@ -16,7 +16,7 @@ typedef unsigned int u_int;
 typedef struct singly_linked_list
 {
 	char *str;
-	u_intt len;
+	u_int len;
 	struct singly_linked_list *next;
 } list_t;
 
