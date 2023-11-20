@@ -1,7 +1,7 @@
 #include "lists.h"
 #include <string.h>
 /**
- * add_node_end - adds a new node at the end
+ * add_nodeint_end - adds a new node at the end
  * of the input list<int>.
  * @head: head of the list.
  * @n: int to store in the list.
