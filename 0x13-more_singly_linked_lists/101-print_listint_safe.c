@@ -7,25 +7,25 @@
  */
 const listint_t *find_listint_loop_helper(const listint_t *head)
 {
-        const listint_t *slow = head, *fast = head;
+	const listint_t *slow = head, *fast = head;
 
-        while (slow && fast && fast->next)
-        {
-                slow = slow->next;
-                fast = fast->next->next;
-                if (slow == fast)
-                {
-                        slow = head;
-                while (slow != fast)
-                {
-                        slow = slow->next;
-                        fast = fast->next;
-                }
-                return (slow);
-                }
-        }
+	while (slow && fast && fast->next)
+	{
+		slow = slow->next;
+		fast = fast->next->next;
+		if (slow == fast)
+		{
+			slow = head;
+			while (slow != fast)
+			{
+				slow = slow->next;
+				fast = fast->next;
+			}
+			return (slow);
+		}
+	}
 	return (NULL);
-}       
+}
 /**
  * print_listint_safe - prints a linked list.
  * @head: head of a list.
