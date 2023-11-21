@@ -28,7 +28,7 @@ listint_t *find_listint_loop_helper2(listint_t *head)
 }
 /**
  * free_listint_safe - frees a linked list<int>.
- * @head: head of a list.
+ * @h: pointer to  head of a list.
  *
  * Return: number of nodes in the list.
  */
