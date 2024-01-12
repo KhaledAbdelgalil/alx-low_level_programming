@@ -9,12 +9,14 @@
  *
  * Return: Always 0.
  */
-int main(int __attribute__((__unused__)) argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	char password[7], *code;
 	int user_len = strlen(argv[1]), idx, tmp_calculation;
 	int const and = 63;
 
+	if (argc != 2)
+		return (1);
 	code = "A-CHRDw87lNS0E9B2TibgpnMVys5XzvtOGJcYLU+4mjW6fxqZeF3Qa1rPhdKIouk";
 	tmp_calculation = (user_len ^ 59) & and;
 	password[0] = code[tmp_calculation];
