@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	char password[7], *code;
 	int user_len = strlen(argv[1]), idx, tmp_calculation;
-	int const and = 63;
+	const int and = 63;
 
 	if (argc != 2)
 		return (1);
