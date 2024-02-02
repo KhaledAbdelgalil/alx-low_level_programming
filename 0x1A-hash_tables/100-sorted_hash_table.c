@@ -27,8 +27,8 @@ shash_table_t *shash_table_create(unsigned long int size)
 
 /**
  * shash_table_set_helper - help Adds an element to a sorted hash table.
+ * @ht: hash table
  * @node: node to be added to sorted list.
- * @value: The value associated with key.
  *
  */
 void shash_table_set_helper(shash_table_t *ht, shash_node_t *node)
