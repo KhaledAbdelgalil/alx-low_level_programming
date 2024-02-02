@@ -27,8 +27,7 @@ shash_table_t *shash_table_create(unsigned long int size)
 
 /**
  * shash_table_set_helper - help Adds an element to a sorted hash table.
- * @ht: A pointer to the sorted hash table.
- * @key: The key to add - cannot be an empty string.
+ * @node: node to be added to sorted list.
  * @value: The value associated with key.
  *
  */
@@ -76,7 +75,7 @@ void shash_table_set_helper(shash_table_t *ht, shash_node_t *node)
 int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int idx;
-	shash_node_t *head;
+	shash_node_t *head, *current_node;
 
 	if (!ht)
 		return (0);
@@ -95,8 +94,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 	}
 	else
 	{
-		shash_node_t *current_node = head;
-
+		current_node = head;
 		while (current_node != NULL)
 		{
 			if (!strcmp(current_node->key, key))
@@ -110,8 +108,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		current_node = malloc(sizeof(hash_node_t));
 		if (!current_node)
 			return (0);
-		current_node->key = strdup(key);
-		current_node->value = strdup(value);
+		current_node->key = strdup(key), current_node->value = strdup(value);
 		current_node->next = head;
 		ht->array[idx] = current_node;
 		shash_table_set_helper(ht, current_node);
