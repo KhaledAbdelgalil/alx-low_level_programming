@@ -8,6 +8,7 @@
  * @size: the number of elements in array
  * @value: the value to search for
  *
+ * Description: linear search
  * Return: first index if number found otherwise -1
  */
 int linear_search(int *array, size_t size, int value)
