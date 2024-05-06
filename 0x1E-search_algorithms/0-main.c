@@ -4,7 +4,7 @@
 
 /**
  * main - Entry point
- *
+ * ~/git_directories/Betty/betty.sh 0-linear.c 
  * Return: Always EXIT_SUCCESS
  */
 int main(void)
