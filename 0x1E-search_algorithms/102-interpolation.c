@@ -22,7 +22,8 @@ int interpolation_search(int *array, size_t size, int value)
 
 	while (size)
 	{
-		jump = (double)(high - low) / (array[high] - array[low]) * (value - array[low]);
+		jump = (double)(high - low) / (array[high] - array[low]);
+		jump *= (value - array[low]);
 		pos = (size_t)(low + jump);
 		printf("Value checked array[%d]", (int)pos);
 		if (pos >= size)
@@ -46,6 +47,5 @@ int interpolation_search(int *array, size_t size, int value)
 		if (low == high)
 			break;
 	}
-
 	return (-1);
 }
